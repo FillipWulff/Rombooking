@@ -1,6 +1,9 @@
 import './App.css'
 import { SanityProvider, useSanityContext } from "./SanityContext";
 import { useState, useEffect } from "react";
+import Navbar from './navbar';
+import Homepage from './homepage';
+import Bilde from './bilde';
 
 function App() {
   const { client } = useSanityContext();
@@ -31,7 +34,9 @@ function App() {
   return (
     <div className="App">
       <SanityProvider>
-
+        <Navbar></Navbar>
+        <Homepage></Homepage>
+        <Bilde></Bilde>
       </SanityProvider>
     </div>
   );
