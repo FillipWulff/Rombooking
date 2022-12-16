@@ -14,6 +14,7 @@ export default function Homepage(){
                 <button class="button-27" role="button">Ledig rom</button>
                 <button class="button-27" role="button">Kartoversikt</button>
             </div>
+            <img id="bilde" src={tegn}></img>
         </div>
 
     )

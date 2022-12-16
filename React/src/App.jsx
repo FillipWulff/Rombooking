@@ -2,10 +2,36 @@ import './App.css'
 import { SanityProvider, useSanityContext } from "./SanityContext";
 import { useState, useEffect } from "react";
 import Navbar from './navbar';
-import Homepage from './homepage';
+import Homepage from './pages/homepage';
 import Bilde from './bilde';
+import Kart from './pages/kart';
+import Ledigerom from './pages/rom';
+import Omoss from './pages/omoss';
+import Kontakt from './pages/kontakt';
+import Innlogging from './pages/innlogging';
 
 function App() {
+  let Component
+  switch (window.location.pathname) {
+    case "/":
+      Component = Homepage
+      break;
+    case "/Kartoversikt":
+      Component = Kart
+      break;
+    case "/LedigeRom":
+      Component = Ledigerom
+      break;
+    case "/OmOss":
+      Component = Omoss
+      break;
+    case "/Kontakt":
+      Component = Kontakt
+      break;
+    case "/Innlogging":
+      Component = Innlogging
+       break;
+  }
   const { client } = useSanityContext();
   const [data, setData] = useState([]);
 
@@ -35,8 +61,7 @@ function App() {
     <div className="App">
       <SanityProvider>
         <Navbar></Navbar>
-        <Homepage></Homepage>
-        <Bilde></Bilde>
+        <Component/>
       </SanityProvider>
     </div>
   );

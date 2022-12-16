@@ -3,13 +3,13 @@ import React from "react"
 export default function Navbar (){
     return(
         <div id="header">
-            <a id="tittel">bookmeariver.</a>
+            <a href="/"id="tittel">bookmeariver.</a>
             <div id="valg">
-                <a>Kartoversikt</a>
-                <a>Ledig rom</a>
-                <a>Om oss</a>
-                <a>Kontakt</a>
-                <a id="innlogging">Logg inn</a>
+                <a href="/Kartoversikt">Kartoversikt</a>
+                <a href="/LedigeRom">Ledig rom</a>
+                <a href="/OmOss">Om oss</a>
+                <a href="/Kontakt">Kontakt</a>
+                <a href="/Innlogging"id="innlogging">Logg inn</a>
             </div>
         </div>
     )
