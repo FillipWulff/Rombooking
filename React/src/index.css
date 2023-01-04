@@ -20,7 +20,9 @@ body{
   align-items: center;
   font-weight: 600;
 }
-
+#header a{
+  text-decoration: none;
+}
 #tittel{
   font-size: 30px;
   margin-left: 80px;
@@ -34,6 +36,12 @@ body{
   width: 800px;
   font-size: 20px;
   color: rgb(100, 100, 100);
+}
+#valg a{
+  color: inherit;
+}
+#valg a:hover{
+  color: black;
 }
 
 #innlogging{
@@ -119,6 +127,15 @@ line-height: 50%;
 #bilde{
   position: fixed;
   margin-left: 650px;
-  margin-top: 200px;
+  /* margin-top: 200px; */
   width: 700px;
+  top: 25%;
+}
+#KartBilde{
+  position: fixed;
+  margin-left: 650px;
+  /* margin-top: 200px; */
+  width: 650px;
+  top: 25%;
+  transform: rotate(90deg);
 }
