@@ -19,6 +19,7 @@ body{
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
+  background-color:#FFFFFF;
 }
 #header a{
   text-decoration: none;
@@ -139,3 +140,39 @@ line-height: 50%;
   top: 25%;
   transform: rotate(90deg);
 }
+
+/*/ OM OSS */
+
+#omoss{
+  padding-top: 60px;
+  font-size: 30px;
+  margin-left: 0px;
+  text-align: center;
+}
+
+#portretter{
+  display: flex;
+  column-gap: 70px;
+  justify-items: center;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 0px;
+  
+}
+
+#beskrivelse{
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+  margin-right: 155px;
+  margin-left: 155px;
+  
+}
+
+.beskrivelse-navn{
+  width: 300px;
+  font-size: 30px;
+  background-color: black;
+}
+
+
