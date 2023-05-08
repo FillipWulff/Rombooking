@@ -9,7 +9,7 @@ import Ledigerom from './pages/rom';
 import Omoss from './pages/omoss';
 import Kontakt from './pages/kontakt';
 import Innlogging from './pages/innlogging';
-
+import GronnBase from "./pages/kartPages/gronnbase.jsx";
 function App() {
   let Component
   switch (window.location.pathname) {
@@ -30,6 +30,9 @@ function App() {
       break;
     case "/Innlogging":
       Component = Innlogging
+       break;
+     case "/Kartoversikt/GronnBase":
+      Component = GronnBase
        break;
   }
   const { client } = useSanityContext();
