@@ -58,7 +58,7 @@ function App() {
     }
   }, [client, setData, testData]);
 
-  console.log("Data: ", data[2])
+  console.log("Data: ", data)
 
   return (
     <div className="App">
