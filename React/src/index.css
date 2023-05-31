@@ -19,6 +19,7 @@ body{
   justify-content: space-between;
   align-items: center;
   font-weight: 600;
+  background-color:#FFFFFF;
 }
 #header a{
   text-decoration: none;
@@ -139,87 +140,39 @@ line-height: 50%;
   top: 30%;
   transform: rotate(90deg);
 }
-.grid-container {
-  position: fixed;
-  display: grid;
-  grid-template-columns:1fr 1fr;
-  gap:30px;
-  left: 5%;
-  top: 20%;
-  
-}
-.KartInfo{
-  display: flex;
-  width: 400px;
-  height: 100px;
-  border-width: 0px;
-  border-style: solid;
-  border-color: grey;
 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+/*/ OM OSS */
 
-}
-.KartInfo h2{
-  position: absolute;
+#omoss{
+  padding-top: 60px;
   font-size: 30px;
+  margin-left: 0px;
   text-align: center;
 }
 
-#placeholder1{
-  position: relative;
-  left: 240px;
-  top: 20px;
-  width: 30%;
-  height: 60%;
-  border-width: 2px;
-  border-style: solid;
-  border-color: grey;
+#portretter{
+  display: flex;
+  column-gap: 70px;
+  justify-items: center;
+  margin-right: 200px;
+  margin-left: 200px;
+  margin-top: 0px;
+  
 }
-.grid-container a{
-  color: inherit;
-  text-decoration: none;
+
+#beskrivelse{
+  display: flex;
+  font-size: 20px;
+  justify-content: space-around;
+  margin-right: 155px;
+  margin-left: 155px;
+  
 }
-#boks1:hover{
-  background-color: green;
-  color: white;
+
+.beskrivelse-navn{
+  width: 300px;
+  font-size: 30px;
+  background-color: black;
 }
-#boks2:hover{
-  background-color: orange;
-  color: white;
-}
-#boks3:hover{
-  background-color: purple;
-  color: white;
-}
-#boks4:hover{
-  background-color: #0050B5;
-  color: white;
-}
-#boks5:hover{
-  background-color: pink;
-  color: white;
-}
-#boks6:hover{
-  background-color: #00BCE3;
-  color: white;
-}
-#boks7:hover{
-  background-color: #C3B1E1;
-  color: white;
-}
-#boks8:hover{
-  background-color: #78BE21;
-  color: white;
-}
-#boks9:hover{
-  background-color:#77DD77;
-  opacity: 70%;
-  color: white;
-}
-#boks0:hover{
-  background-color:#BB0000;
-  color: white;
-}
-#tittel2{
-  margin-top: 100px;
-}
+
+
