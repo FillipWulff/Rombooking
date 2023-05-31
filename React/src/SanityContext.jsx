@@ -19,12 +19,12 @@ export const SanityProvider = (props) => {
       useCdn: true, // `false` if you want to ensure fresh data
     });
 
-    console.log("Client: ", client)
+    //console.log("Client: ", client)
 
     setState((prevState) => ({ ...prevState, client }));
   }, []);
 
-console.log(state)
+//console.log("yolo",state)
 
 
   return (
