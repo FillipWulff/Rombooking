@@ -1,4 +1,6 @@
 export default {
+    
+  //sanity schema. definerer forskjellige datapoints.
     name: 'Rom',
     type: 'document',
       title: 'Rom',
@@ -28,7 +30,7 @@ export default {
       }
       ,
       {
-        name: 'kapasitet',
+        name: 'Kapasitet',
         type: 'number',
         title: 'Kapasitet'
       }
@@ -48,6 +50,11 @@ export default {
         name: 'Nokkelpers',
         type: 'string',
         title: 'Nokkelpers'
+      }
+      ,
+      {
+        name: "slug",
+        type: "slug"
       }
     ]
   }
