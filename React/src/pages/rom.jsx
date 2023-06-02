@@ -13,7 +13,7 @@ export default function Ledigerom(){
     const it = "IT-labben"
 
     const options = [ //Creates the different options and assigns the belonging values
-        {value: "", label: "Mandag 08:15-09:00"},
+        {value: gs + ", " + er + ", ", label: "Mandag 08:15-09:00"},
         {value: "", label: "Mandag 09:00-09:45"},
         {value: "", label: "Mandag 10:00-10:45"},
         {value: "", label: "Mandag 10:45-11:30"},
@@ -58,7 +58,14 @@ export default function Ledigerom(){
         {value: "", label: "Fredag 14:00-14:45"},
         {value: "", label: "Fredag 14:45-15:30"}
     ]
-    
+        
+        const [selected, setSelected] = useState(null);
+
+        const handleChange = (selectedOption) => {
+        setSelected(selectedOption);
+        console.log(`Option selected:`, selectedOption);
+        };
+
     return  (
         <div id="LedigRom">
             <h1>Velg ditt tidspunkt og finn et ledig rom!</h1>
